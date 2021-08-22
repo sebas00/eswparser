@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello Node!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />   
+  </head>
+  <body>
+    
+    <!-- this is the start of content -->
+    <h1>
+     ESW Parser
+    </h1>
+    <div>
+      
+    
+    <form method="post" id="websnippet">
+      
+    
+    <p>
+      <label for='websnippet'  >Emedded Deployment Snippet:</label>
+          <textarea rows="4" cols="50" form="websnippet" placeholder='paste snippet code here', name='snippet'></textarea>
+    </p>
+      
+      <input type="submit", value="Parse" class="parsebutton">
+      
+      
+    </form>   
+    </div>
+    <div class="wrapper">
+   <div>
+     orgid 
+    </div> 
+      <div>
+        {{ orgid }}
+      </div>
+    <div>
+      endpoint URL 
+    </div>
+      <div>
+        {{ endpointUrl}}
+      </div>
+    <div>
+      buttonId 
+    </div>
+      <div>
+        {{ buttonId}}
+      </div>
+    <div>
+      deploymentId 
+    </div>
+      <div>
+        {{ deploymentId}}
+      </div>
+    </div>
+    
+  </body>
+</html>
