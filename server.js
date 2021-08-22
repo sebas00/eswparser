@@ -61,7 +61,7 @@ fastify.post("/", function (req, res) {
 });
 
 // Run the server and report out to the logs
-fastify.listen(process.env.PORT || 3000, err => {
+fastify.listen(process.env.PORT || 3000,  '0.0.0.0', err => {
   if (err) throw err
   console.log(`server listening on ${fastify.server.address().port}`)
 })
